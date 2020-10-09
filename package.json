@@ -1,0 +1,17 @@
+{
+  "name": "payment",
+  "version": "1.0.0",
+  "description": "payment gateway integration",
+  "main": "app.js",
+  "scripts": {
+    "start": "app.js"
+  },
+  "author": "Vani Singh",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "paypal-rest-sdk": "^1.8.1"
+  }
+}
