@@ -21,24 +21,24 @@ app.post('/pay', (req,res) => {
             "payment_method": "paypal"
         },
         "redirect_urls": {
-            "return_url": "http://localhost:3000/success",
-            "cancel_url": "http://localhost:3000/cancel"
+            "return_url": "http://localhost:3003/success",
+            "cancel_url": "http://localhost:3003/cancel"
         },
         "transactions": [{
             "item_list": {
                 "items": [{
-                    "name": "Red Sox Hat",
+                    "name": "Captain America T-Shirt",
                     "sku": "001",
-                    "price": "25.00",
+                    "price": "675.00",
                     "currency": "INR",
                     "quantity": 1
                 }]
             },
             "amount": {
                 "currency": "INR",
-                "total": "25.00"
+                "total": "675.00"
             },
-            "description": "Hat for the best team ever!"
+            "description": "Black and white T-Shirt"
         }]
     };
 
@@ -64,7 +64,7 @@ app.get('/success', (req,res) => {
         "transactions": [{
             "amount": {
                 "currency": "INR",
-                "total": "25.00"
+                "total": "675.00"
             }
         }]
     };
@@ -82,5 +82,5 @@ app.get('/success', (req,res) => {
 
 app.get('/cancel', (req,res) => res.send('Cancelled'));
 
-app.listen(3000, () => console.log('Server Started'));
+app.listen(3003, () => console.log('Server Started'));
 
