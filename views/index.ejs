@@ -1,16 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Payment Gateway Integration</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>Donate</title>
 </head>
+<style>
+    body {
+        background-image:
+            radial-gradient(circle at 100% 150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
+            radial-gradient(circle at 0    150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
+            radial-gradient(circle at 50%  100%, #42D2BB 10%, #3BC1AC 11%, #3BC1AC 23%, #42D2BB 24%, #42D2BB 30%, #3BC1AC 31%, #3BC1AC 43%, #42D2BB 44%, #42D2BB 50%, #3BC1AC 51%, #3BC1AC 63%, #42D2BB 64%, #42D2BB 71%, transparent 71%, transparent),
+            radial-gradient(circle at 100% 50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent),
+            radial-gradient(circle at 0    50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent);
+        background-size:100px 50px;
+        color: black;
+    }
+
+    h2 {
+        font-size: 50px;
+        font-family: 'Poppins', sans-serif;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+
+    .wrapper {
+        margin: 150px auto;
+        text-align: center;
+        width: 100%;
+        position: relative;
+    }
+
+    .btn{
+        padding: 15px 100px;
+        margin: 80px 10px;
+        color: black;
+        border: 4px solid black;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: lightseagreen;
+    }
+
+     .btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: #000;
+        -webkit-transform: scaleX(0.3);
+        transform: scaleX(0.3);
+        opacity: 0;
+        transition: all 0.3s;
+    } 
+
+    .btn:hover{
+      cursor: pointer;
+    }
+
+</style>
 <body>
-  <h1>Captain America T-Shirt</h1>
-  <h2>Buy For Rs. 675</h2>
-  <form action="/pay" method="post">
-    <input type="submit" value="Buy">
-  </form>
+    <div class="wrapper">
+        <h2>Payment Gateway Integration <br> - The Sparks Foundation </h2>
+        <form action="/pay" method="post">
+          <input type="submit" value="Buy" class="btn">
+        </form>
+    </div>
 </body>
 </html>
