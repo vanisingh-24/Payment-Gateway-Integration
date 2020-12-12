@@ -1,159 +1,18 @@
 <%- include('partials/header.html') %>
 <div class="se-pre-con"> </div>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="overflow-x: hidden; height:7%; position: fixed; top: 0; width: 100%;">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="position: inherit; right: 2%;">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item  active">
-            <a class="nav-link" href="#" style="border-bottom: 2px solid #007bff;">Home<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-     </div>
-     <!-- <i class="material-icons"  id="menu" onclick="openNav()" style=" color: black;">menu</i> -->
-</nav>  
-
+<ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 
 <div class="text-center first">
-        
-        
         <h1 class="centered">TOGETHER WE CAN IMPROVE THEIR LIVES <br>
             SO LET'S DO IT !</h1>
-        
         <form action="/pay" method="post">
             <input type="submit" value="DONATE" class="btn">
         </form>
 </div>
 
 <%- include('partials/footer.html') %>
-
-
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <title>Payment Integration</title>
-</head>
-<style>
-    /* body {
-        background-image:
-            radial-gradient(circle at 100% 150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
-            radial-gradient(circle at 0    150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
-            radial-gradient(circle at 50%  100%, #42D2BB 10%, #3BC1AC 11%, #3BC1AC 23%, #42D2BB 24%, #42D2BB 30%, #3BC1AC 31%, #3BC1AC 43%, #42D2BB 44%, #42D2BB 50%, #3BC1AC 51%, #3BC1AC 63%, #42D2BB 64%, #42D2BB 71%, transparent 71%, transparent),
-            radial-gradient(circle at 100% 50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent),
-            radial-gradient(circle at 0    50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent);
-        background-size:100px 50px;
-        color: black;
-    } */
-
-    /* body{
-        background-image: url('../public/Images/charity.jpg');
-        background-size: cover;
-    } */
-
-    /* body {
-
-background-image: url("./charity.jpg");
- } */
-
-    h2 {
-        font-size: 50px;
-        font-family: 'Poppins', sans-serif;
-        text-transform: capitalize;
-        letter-spacing: 1px;
-        margin-top: 100px;
-        margin-bottom: 20px;
-    }
-
-    .wrapper {
-        margin: 150px auto;
-        text-align: center;
-        width: 100%;
-        position: relative;
-    }
-
-    .btn{
-        padding: 15px 100px;
-        margin: 80px 10px;
-        color: black;
-        border: 4px solid black;
-        border-radius: 5px;
-        font-family: 'Poppins', sans-serif;
-        text-transform: uppercase;
-        text-align: center;
-        position: relative;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        font-weight: 600;
-        background-color: lightseagreen;
-    }
-
-     .btn::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        background-color: #000;
-        -webkit-transform: scaleX(0.3);
-        transform: scaleX(0.3);
-        opacity: 0;
-        transition: all 0.3s;
-    } 
-
-    .btn:hover{
-      cursor: pointer;
-    }
-
-
-
-</style>
-<body>
-    <img src="../public/Images/charity.jpg" alt="abc" width="70px" height="70px"/> -->
-
-<!-- <img src="charity.jpg">
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="wrapper">
-        <h2>Payment Gateway Integration</h2>
-        <form action="/pay" method="post">
-          <input type="submit" value="Buy" class="btn">
-        </form>
-    </div>
-
-
-
-</script>
-</body>
-</html> -->
-
-
-
