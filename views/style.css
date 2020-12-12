@@ -1,0 +1,65 @@
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+    background: url('/simple-pre-loader/images/loader-128x/Preloader_1.gif') center no-repeat #ffff;
+ 
+}
+
+.first{
+    text-align: right;
+    background-color: rgb(0, 0, 0, 0.4);
+    height:100%;
+    margin:0;
+    background-image: url("https://www.gannett-cdn.com/-mm-/3b8b0abcb585d9841e5193c3d072eed1e5ce62bc/c=0-30-580-356/local/-/media/2017/10/05/USATODAY/usatsports/glass-jar-full-of-cois-with-donate-written-on-it-charity-donation-philanthropy_large.jpg?width=580&height=326&fit=crop&format=pjpg&auto=webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn {
+  display: inline-block;
+  width: 12%;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(43, 43, 43);
+  margin-top: 30%;
+  margin-left: 53%;
+}
+
+.btn:hover {background-color: black}
+
+.btn:active {
+  background-color: rgb(40,40,40);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.centered {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 1080px;
+  }
+
+
+
+
+
+
+
+
+
+
+ 

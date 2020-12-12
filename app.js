@@ -11,6 +11,7 @@ paypal.configure({
 const app = express();
 
 app.set('view engine', 'ejs');
+app.use(express.static('views'));
 
 app.get('/', (req,res) => res.render('index'));
 
@@ -81,5 +82,6 @@ app.get('/success', (req,res) => {
 });
 
 app.get('/cancel', (req,res) => res.send('Cancelled'));
+
 
 app.listen(3003, () => console.log('Server Started'));
