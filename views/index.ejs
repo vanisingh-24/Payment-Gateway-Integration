@@ -1,11 +1,61 @@
 <%- include('partials/header.html') %>
 <div class="se-pre-con"> </div>
 
-<ul>
+<!-- <ul>
     <li><a class="active" href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
-  </ul>
+</ul> -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="overflow-x: hidden; position: fixed; top: 0; width: 100%;">
+    <a class="navbar-brand" href="#">
+        <!-- <img class="logo2" src="dsc_linear.png" height="37px" width="400px">
+        <img class="logo1" src="logo.png" height= "37px" width="80px"> -->
+     </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="position: inherit; right: 2%;">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item  active">
+            <a class="nav-link" href="#" style="border-bottom: 2px solid #007bff;">Contact<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+        </ul>
+     </div>
+     <i class="material-icons"  id="menu" onclick="openNav()" style=" color: black;">menu</i>
+</nav>  
+
+<!-- Mobile menu -->
+<div id="mobile__menu" class="overlay" style="z-index: 999999;">
+    <div class="overlay__content">
+        <a href="#">Contact</a>
+        <a href="#">Home</a>
+    </div>
+</div>
+
+
+<section>
+
+    <div id="donate-head">
+        <div class="hero-img">
+            <div class="hero-heading">
+            <h1>Gracious</h1>
+            </div>
+        </div>
+        <div class="hero-text">
+            <div class="hero-head">
+                <div class="flex">
+                <h3>Non Government Organisation</h3>
+                </div>
+            </div>
+            <div class="hero-content">
+                <div class="flex">
+                <p>ipsum dolor sit amet consectetur adipisicing elit. Ipsum autem tempore, illo maiores, labore dolores enim id amet dolore reiciendis reprehenderit error eum dolorem deserunt ad quas necessitatibus praesentium architecto.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est fugit enim odio expedita explicabo assumenda earum, voluptatem atque quod illo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <div class="text-center first">
         <h1 class="centered">TOGETHER WE CAN IMPROVE THEIR LIVES <br>
