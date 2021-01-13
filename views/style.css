@@ -55,71 +55,6 @@
     text-shadow: 2px 2px 4px #000000;
 }
 
-/* ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    height: 7%;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 27px;
-  }
-  
-  li a:hover {
-    background-color: #111;
-    text-decoration: none;
-    color: crimson;
-  } */
-
-
-/* MOBILE VIEW */
-/* @media (max-width:500px){
-    .first{
-        height: 565px;
-        background-size: 100% 100%;
-        width: 100%;
-        background-color: rgb(0, 0, 0, 0.4);
-    }
-    .btn{
-        display: inline-block;
-        width: 30%;
-        font-size: 13px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        outline: none;
-        color: #fff;
-        background-color: black;
-        border: none;
-        box-shadow: 0 9px rgb(43, 43, 43);
-        margin-left: -165px;
-        margin-top: 89%;
-       
-    }
-    ul {
-        height: 5%;
-      }
-    li a{
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 8px 10px;
-        text-decoration: none;
-        font-size: 16px;
-    }
-} */
 
 
 
@@ -133,7 +68,7 @@ section{
 }
 
 section #donate-head .hero-img{
-  background: url("https://www.gannett-cdn.com/-mm-/3b8b0abcb585d9841e5193c3d072eed1e5ce62bc/c=0-30-580-356/local/-/media/2017/10/05/USATODAY/usatsports/glass-jar-full-of-cois-with-donate-written-on-it-charity-donation-philanthropy_large.jpg?width=580&height=326&fit=crop&format=pjpg&auto=webp") no-repeat center center/cover;
+  background: url("./img/donate.jpg") no-repeat center center/cover;
   height: 50vh;
   width: 100vw;
   display: flex;
@@ -225,6 +160,7 @@ section #donate-head .hero-text{
 
 nav{
   z-index: 300;
+  height: 10vh;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
 }
 
