@@ -168,7 +168,6 @@ nav{
 
 
 
-/* MOBILE VIEW */
 #menu {
   display: none;
   cursor: pointer;
@@ -235,8 +234,6 @@ nav{
 
 
 
-/* Clients Section
---------------------------------*/
 
 #clients {
   padding: 60px 0;
