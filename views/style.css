@@ -275,3 +275,101 @@ nav{
 #clients img {
   transition: all 0.4s ease-in-out;
 }
+
+
+
+/* footer */
+footer{
+  color: #ffffff;
+}
+.foot-container{
+ background-color: #393b44;
+ color: #ffffff;
+ display: flex;
+ flex-direction: row;
+}
+.columns{
+ padding: 60px;
+ text-align: center;
+ line-height: 1.5;
+}
+.columns h4{
+ margin-bottom: 10px;
+ font-size: 16px;
+}
+.columns p{
+ margin-bottom: 10px;
+}
+.columns button{
+ background-color: #d6e0f0;
+ padding: 10px 30px;
+ border: 1px solid #bbe1fa;
+ margin-top: 20px;
+ color: #ffffff;
+}
+
+.columns button:hover{
+ background-color:black;
+ 
+}
+.columns .connect{
+ display: flex;
+ flex-direction: column;
+}
+.foot-container .columns .social {
+ display: flex;
+ flex-direction: row;
+ color: #ffffff;
+ align-items: center;
+ justify-content: center;
+}
+.foot-container .columns .social i{
+ color: #ffffff;
+}
+.foot-container .columns .social i:hover{
+  color: #9fb6cc;
+}
+.social-icon{
+ padding: 20px;
+}
+.subs{
+ display: flex;
+ font-size: 13px;
+ flex-direction: row;
+}
+.subs button{
+ padding: 5px 5px;
+ padding-bottom: 3px;
+ height: 50px;
+ font-size: 13px
+}
+.columns input{
+ height: 50px;
+ width: 70%;
+ margin-left: 30px;
+ margin-top: 20px;
+ margin-right: 0;
+ padding-left: 5px;
+ border: 1px solid #9fb6cc;
+}
+.columns button{
+  background-color: #d6e0f0;
+  border: 1px solid #bbe1fa;
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+@media(max-width:768px)
+{
+ .foot-container{
+ flex-direction: column;
+ }
+ .subs button{
+ margin-right:40px ;
+ } 
+ .columns input{
+  margin-left: 40px;
+ 
+ }
+}
