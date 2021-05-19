@@ -1,0 +1,301 @@
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+    background: url('/simple-pre-loader/images/loader-128x/Preloader_1.gif') center no-repeat #ffff;
+ 
+}
+
+.first{
+    text-align: right;
+    background-color: rgb(0, 0, 0, 0.4);
+    height:100%;
+    margin:0;
+    background-image: url("https://www.gannett-cdn.com/-mm-/3b8b0abcb585d9841e5193c3d072eed1e5ce62bc/c=0-30-580-356/local/-/media/2017/10/05/USATODAY/usatsports/glass-jar-full-of-cois-with-donate-written-on-it-charity-donation-philanthropy_large.jpg?width=580&height=326&fit=crop&format=pjpg&auto=webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn {
+  display: inline-block;
+  width: 12%;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(43, 43, 43);
+  margin-top: 30%;
+  margin-left: 53%;
+}
+
+.btn:hover {background-color: black}
+
+.btn:active {
+  background-color: rgb(40,40,40);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.centered {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 1080px;
+    color: cornsilk;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+
+
+
+
+
+
+
+section{
+  color: #333;
+}
+
+section #donate-head .hero-img{
+  background: url("./img/donate.jpg") no-repeat center center/cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.hero-img::before{
+  content: "";
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+.hero-img *{
+  z-index: 50;
+}
+.hero-heading  h1{
+  color: white;
+  font-size: 48px;
+  font-weight: lighter;
+}
+section #donate-head{
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+}
+section #donate-head .hero-text{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: #f1f3f8;
+}
+.hero-text .hero-content,
+.hero-text .hero-head{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text .hero-head{
+  flex: 40%;
+  font-size: 38px;
+  font-weight: bolder;
+}
+.hero-text .hero-content{
+  flex: 60%;
+  padding: 40px;
+  line-height: 1.6;
+}
+
+.hero-head h3{
+  color: #333333;
+  font-size: 44.6px;
+  font-weight: bold;
+}
+
+@media(max-width:768px)
+{
+  section #donate-head .hero-text{
+      flex-direction: column;
+  }
+  .hero-text .hero-content{
+      overflow: visible;
+      padding: 20px;
+      line-height: 1.4;
+  }
+  .hero-text .hero-head{
+      font-size: 36px;
+      overflow: visible;
+      margin-top: 10px;
+  }
+
+  .hero-head h3{
+      margin-top: 10px;
+  }
+
+  .hero-heading h1{
+      margin-top: 30px;
+  }
+}
+
+
+
+nav{
+  z-index: 300;
+  height: 10vh;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+
+
+
+
+
+#menu {
+  display: none;
+  cursor: pointer;
+  opacity: 1;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+#menu:hover{
+   opacity: .8;
+   transition: all 0.5s ease;
+   border-color: #17a2b8;
+}
+
+.overlay {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #24252a;
+  opacity: 1;
+  overflow-x: hidden;
+  z-index: 9999;
+  transition: all 0.4s ease 0s;
+}
+
+.overlay_clicked{
+  height: 100%;
+  width: 80%;
+  position: fixed;
+  z-index: 9999999;
+  top: 0;
+  left: 0;
+  background-color: #24252a;
+  opacity: 1;
+  overflow-x: hidden;
+  transition: all 0.4s ease-out 0s;
+}
+
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 8vw;
+  display: block;
+  color: #edf0f1;
+  transition: all 0.3s ease 0s;
+}
+
+.overlay a:hover {
+  text-decoration: none;
+  color: #0088a9;
+}
+
+
+
+
+
+#clients {
+  padding: 60px 0;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+#clients .clients-wrap {
+  border-top: 1px solid #d6eaff;
+  border-left: 1px solid #d6eaff;
+  margin-bottom: 30px;
+}
+
+#clients .client-logo {
+  padding: 64px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-right: 1px solid #d6eaff;
+  border-bottom: 1px solid #d6eaff;
+  overflow: hidden;
+  background: #fff;
+  height: 160px;
+}
+
+#clients .client-logo:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#clients img {
+  transition: all 0.4s ease-in-out;
+}
+
+/* footer */
+
+#footer{
+  background: url('../images/blogs-bg.png') no-repeat center center/cover;
+}
+#footer li{
+  list-style:none;
+  padding-top:5px;     
+}
+#footer li a{
+  text-decoration:none;
+  font-size:17px;
+  color:white;
+}
+#footer li a:hover{
+  color:#FFD85C;
+ 
+}
+.copyright{
+  background-color:#27272E;
+  color:white;
+  text-align:center;
+}

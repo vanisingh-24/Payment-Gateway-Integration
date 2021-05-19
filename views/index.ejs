@@ -1,82 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <title>Donate</title>
-</head>
-<style>
-    body {
-        background-image:
-            radial-gradient(circle at 100% 150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
-            radial-gradient(circle at 0    150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
-            radial-gradient(circle at 50%  100%, #42D2BB 10%, #3BC1AC 11%, #3BC1AC 23%, #42D2BB 24%, #42D2BB 30%, #3BC1AC 31%, #3BC1AC 43%, #42D2BB 44%, #42D2BB 50%, #3BC1AC 51%, #3BC1AC 63%, #42D2BB 64%, #42D2BB 71%, transparent 71%, transparent),
-            radial-gradient(circle at 100% 50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent),
-            radial-gradient(circle at 0    50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent);
-        background-size:100px 50px;
-        color: black;
-    }
+<%- include('partials/header.html') %>
+<div class="se-pre-con"> </div>
 
-    h2 {
-        font-size: 50px;
-        font-family: 'Poppins', sans-serif;
-        text-transform: capitalize;
-        letter-spacing: 1px;
-        margin-top: 100px;
-        margin-bottom: 20px;
-    }
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="overflow-x: hidden; position: fixed; top: 0; width: 100%;">
+    <a class="navbar-brand" href="#">
+    
+     </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="position: inherit; right: 2%;">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item  active">
+            <a class="nav-link" href="#" style="border-bottom: 2px solid #007bff;">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+     </div>
+     <i class="material-icons"  id="menu" onclick="openNav()" style=" color: black;">menu</i>
+</nav>  
 
-    .wrapper {
-        margin: 150px auto;
-        text-align: center;
-        width: 100%;
-        position: relative;
-    }
-
-    .btn{
-        padding: 15px 100px;
-        margin: 80px 10px;
-        color: black;
-        border: 4px solid black;
-        border-radius: 5px;
-        font-family: 'Poppins', sans-serif;
-        text-transform: uppercase;
-        text-align: center;
-        position: relative;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        font-weight: 600;
-        background-color: lightseagreen;
-    }
-
-     .btn::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        background-color: #000;
-        -webkit-transform: scaleX(0.3);
-        transform: scaleX(0.3);
-        opacity: 0;
-        transition: all 0.3s;
-    } 
-
-    .btn:hover{
-      cursor: pointer;
-    }
-
-</style>
-<body>
-    <div class="wrapper">
-        <h2>Payment Gateway Integration <br> - The Sparks Foundation </h2>
-        <form action="/pay" method="post">
-          <input type="submit" value="Buy" class="btn">
-        </form>
+<!-- Mobile menu -->
+<div id="mobile__menu" class="overlay" style="z-index: 999999;">
+    <div class="overlay__content">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
     </div>
-</body>
-</html>
+</div>
+
+
+<section>
+
+    <div id="donate-head">
+        <div class="hero-img">
+            <div class="hero-heading">
+            <h1 style="text-align: center;">Gracious - </h1>
+            <h2>A Non Government Organisation</h2>
+            </div>
+        </div>
+        <div class="hero-text">
+            <div class="hero-head">
+                <div class="flex">
+                <h3>Welcome to our charity!</h3>
+                </div>
+            </div>
+            <div class="hero-content">
+                <div class="flex">
+                <p>ipsum dolor sit amet consectetur adipisicing elit. Ipsum autem tempore, illo maiores, labore dolores enim id amet dolore reiciendis reprehenderit error eum dolorem deserunt ad quas necessitatibus praesentium architecto.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est fugit enim odio expedita explicabo assumenda earum, voluptatem atque quod illo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="text-center first">
+        <h1 class="centered">TOGETHER WE CAN IMPROVE THEIR LIVES <br>
+            SO LET'S DO IT !</h1>
+        <form action="/pay" method="post">
+            <input type="submit" value="DONATE" class="btn">
+        </form>
+</div>
+
+
+
+<section id="quote" class="testimonial-section py-5" id="testimonials">
+    <h3>Our Causes</h3>
+    <div class="container py-lg-5">
+      <div id="flipster-carousel" class="flipster-carousel pt-md-3">
+        <div class="flip-items pb-5">
+          <div class="flip-item text-center text-md-left">
+            <div class="item-inner shadow-lg rounded">
+              <h5 class="mb-2">Bring water to the children</h5>
+              
+              <div class="mb-3">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                dolor. Aenean massa.
+              </div>
+            </div>
+          </div>
+
+
+          <div class="flip-item">
+            <div class="item-inner shadow-lg rounded">
+              <h5 class="mb-2">Education For All</h5>
+     
+              <div class="mb-3">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                dolor. Aenean massa.
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-item">
+            <div class="item-inner shadow-lg rounded">
+              <h5 class="mb-2">Bring Water To The Children</h5>
+  
+              <div class="mb-3">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                dolor. Aenean massa.
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="pt-5 text-center">
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+<%- include('partials/footer.html') %>
